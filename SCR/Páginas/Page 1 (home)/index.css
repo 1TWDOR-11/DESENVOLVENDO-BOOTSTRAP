@@ -1,0 +1,168 @@
+/* Estilos gerais */
+body, html {
+    font-family: 'Lexend', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    margin: 0;
+    background-color: #1a1a2e; /* Fundo escuro */
+    color: #ffffff;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #252b42;
+    padding-top: 1rem;
+}
+
+.sidebar a {
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    background-color: #3a3f5a;
+}
+
+/* Conteúdo principal */
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    background-color: #1f2338;
+    border-radius: 8px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 11%;
+    height:9%;
+}
+
+.title {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* Barra de busca */
+.search-bar {
+    background-color: #2d324f;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Seções de jogos e streamers */
+.games-section, .streamers-section {
+    margin-top: 20px;
+}
+
+.game-cards-container {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite quebra para uma nova linha se o espaço acabar */
+}
+
+.game-card, .streamer-card {
+    background-color: #2d324f;
+    border-radius: 8px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    width: 200px; /* Define uma largura fixa para os cards de jogo */
+    margin-bottom: 15px;
+}
+
+.game-card img {
+    width: 100%;
+    max-height: 120px; /* Limita a altura da imagem */
+    border-radius: 8px;
+}
+
+/* Lista de Streamers */
+.streamers-list {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os cards dos streamers */
+    flex-wrap: wrap; /* Permite quebra de linha se não houver espaço suficiente */
+}
+
+/* Botões de categoria */
+.category-buttons {
+    margin-bottom: 15px;
+}
+
+.category-buttons button {
+    background: #3a3f5a;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin-right: 5px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Sidebar */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 15px;
+    }
+
+    /* Conteúdo principal */
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    /* Barra de busca */
+    .search-bar {
+        width: 100%;
+    }
+
+    /* Game cards e streamer cards no modo mobile */
+    .games-section .row, .streamers-section .d-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Header no modo mobile */
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sidebar a:hover {
+        background-color: #3a3f5a;
+        cursor: pointer;
+    }
+}
