@@ -15,23 +15,46 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <h3 class="sidebar-title">
-            <div class="user-info">
-                <span class="username">Gxbels #0411</span>
-                <p class="location">São Paulo, Brasil</p>
+    <div class="d-flex flex-column p-3 bg-dark text-light sidebar">
+        <!-- Perfil do Usuário -->
+        <div class="d-flex align-items-center mb-4">
+            <img src="/Public/Assets/Images/Icon de perfil - Gxbels.png" alt="Foto de Perfil" class="rounded-circle" width="50" height="50">
+            <div class="ms-3">
+                <p class="mb-0">Gxbels #0411</p>
+                <small>São Paulo, Brasil</small>
             </div>
-            <div class="profile-picture">
-                <img src="../../../Public/Assets/Images/Icon de perfil - Gxbels.png" alt="Foto de perfil" class="profile-img">
-            </div>
-        </h3>
-        <nav class="nav-links">
-            <a href="#inicio" class="nav-link">Início</a>
-            <a href="#descobrir" class="nav-link">Descobrir</a>
-            <a href="#favoritos" class="nav-link">Favoritos</a>
-            <a href="#config" class="nav-link">Configurações</a>
-            <a href="#sair" class="nav-link">Sair</a>
-        </nav>
+            <a href="#" class="ms-auto">
+                <i class="bi bi-bell-fill text-light"></i> <!-- Ícone de sino para notificações -->
+            </a>
+        </div>
+    
+        <!-- Itens do Menu -->
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+                <a href="#" class="nav-link active d-flex align-items-center">
+                    <i class="bi bi-house-door-fill text-primary me-2"></i> <!-- Ícone de casa -->
+                    <span>Início</span>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="#" class="nav-link d-flex align-items-center">
+                    <i class="bi bi-compass text-light me-2"></i> <!-- Ícone de descobrir -->
+                    <span>Descobrir</span>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="#" class="nav-link d-flex align-items-center">
+                    <i class="bi bi-heart text-light me-2"></i> <!-- Ícone de favoritos -->
+                    <span>Favoritos</span>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="#" class="nav-link d-flex align-items-center">
+                    <i class="bi bi-person text-light me-2"></i> <!-- Ícone de perfil -->
+                    <span>Perfil</span>
+                </a>
+            </li>
+        </ul>
     </div>
     
     <div class="content">
