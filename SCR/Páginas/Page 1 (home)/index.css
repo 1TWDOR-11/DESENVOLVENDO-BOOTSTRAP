@@ -3,11 +3,10 @@ body, html {
     font-family: 'Lexend', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100%;
     margin: 0;
-    background-color: #1a1a2e; /* Fundo escuro */
-    color: #ffffff;
+    background-color: #1a1a2e;
 }
 
-/* Sidebar */
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -30,13 +29,13 @@ body, html {
     background-color: #3a3f5a;
 }
 
-/* Conteúdo principal */
+
 .content {
     margin-left: 260px;
     padding: 20px;
 }
 
-/* Header */
+
 .header {
     display: flex;
     flex-direction: column;
@@ -63,7 +62,7 @@ body, html {
     color: #fff;
 }
 
-/* Barra de busca */
+
 .search-bar {
     background-color: #2d324f;
     border: none;
@@ -74,15 +73,15 @@ body, html {
     margin-top: 10px;
 }
 
-/* Seções de jogos e streamers */
+
 .games-section, .streamers-section {
     margin-top: 20px;
 }
 
 .game-cards-container {
     display: flex;
-    gap: 20px; /* Espaçamento entre os cards */
-    flex-wrap: wrap; /* Permite quebra para uma nova linha se o espaço acabar */
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 .game-card, .streamer-card {
@@ -91,24 +90,24 @@ body, html {
     padding: 10px;
     color: #fff;
     text-align: center;
-    width: 200px; /* Define uma largura fixa para os cards de jogo */
+    width: 200px; 
     margin-bottom: 15px;
 }
 
 .game-card img {
     width: 100%;
-    max-height: 120px; /* Limita a altura da imagem */
+    max-height: 120px; 
     border-radius: 8px;
 }
 
-/* Lista de Streamers */
+
 .streamers-list {
     display: flex;
-    gap: 20px; /* Espaçamento entre os cards dos streamers */
-    flex-wrap: wrap; /* Permite quebra de linha se não houver espaço suficiente */
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
-/* Botões de categoria */
+
 .category-buttons {
     margin-bottom: 15px;
 }
@@ -122,7 +121,7 @@ body, html {
     margin-right: 5px;
 }
 
-/* Responsividade para dispositivos móveis */
+
 @media (max-width: 768px) {
     /* Sidebar */
     .sidebar {
@@ -137,25 +136,25 @@ body, html {
         padding: 10px 15px;
     }
 
-    /* Conteúdo principal */
+
     .content {
         margin-left: 0;
         padding: 15px;
     }
 
-    /* Barra de busca */
+
     .search-bar {
         width: 100%;
     }
 
-    /* Game cards e streamer cards no modo mobile */
+
     .games-section .row, .streamers-section .d-flex {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    /* Header no modo mobile */
+
     .header {
         flex-direction: column;
         text-align: center;
